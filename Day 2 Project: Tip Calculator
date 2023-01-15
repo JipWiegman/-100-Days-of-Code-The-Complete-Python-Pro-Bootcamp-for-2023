@@ -1,7 +1,7 @@
 
 print ("Welcome to the tip calculator")
 
-totalbil = input ("What was the total bill?")
+totalbil = input ("What was the total bill?$")
 totalbill_float = float(totalbil)
 
 tip_percentage = input ("what percentage would you like to give, 10, 12 or 15?")
@@ -17,5 +17,7 @@ totalbil_and_tip = tip_amount_in_money + totalbill_float
 price_pp = totalbil_and_tip / amount_of_people_int
 price_pp_float = float(price_pp)
 
-print (round(price_pp_float,2))
+final_amount = round(price_pp_float,2)
+
+print (f"Each person should pay: $ {final_amount}")
                  
